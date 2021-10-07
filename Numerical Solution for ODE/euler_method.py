@@ -1,10 +1,16 @@
 def euler_method(x0, y0, xf, h, f) :
     '''
+    Approximates the value of an ODE using Euler's Method
+
+    Keyword arguments:
     x0 - initial value of x
     y0 - initial value of y
     xf - final value of x
-    h - size of the intervals
-    f - function of x and y
+    h - size of the intervals (step)
+    f - function of x and y (usually the right side of the equation)
+
+    Returns:
+    An estimate for the ODE
     '''
     n = int ((xf - x0) / h) # number of iterations
     x = x0
