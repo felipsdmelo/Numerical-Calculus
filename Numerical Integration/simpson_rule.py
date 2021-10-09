@@ -41,7 +41,7 @@ def simpson_error(a, b, n, d) :
     h = (b - a) / n
     h_aux = (b - a) / 100
     maximum = 0
-    # searching for the maximum value of the second derivative of f in the interval
+    # searching for the maximum value of the fourth derivative of f in the interval
     for i in range(100) : # 100 subintervals
         if (abs(d(a + h_aux * i))) > maximum :
             maximum =  abs(d(a + h_aux * i))
