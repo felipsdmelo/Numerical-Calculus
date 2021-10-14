@@ -25,7 +25,8 @@ def euler_method(x0, y0, xf, h, f) :
 
 def improved_euler_method(x0, y0, xf, h, f)
     '''
-    Approximates the value of an ODE using Improved Euler's Method
+    Approximates the value of an ODE using Improved Euler's Method,
+    also known as Heun's Method
 
     Keyword arguments:
     x0 - initial value of x
